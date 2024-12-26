@@ -1,1 +1,3 @@
-# sign-up-form
+# Sign-up Form
+
+Projeto feito para o [The Odin Project](https://www.theodinproject.com), no caminho **Full Stack JavaScript**.
