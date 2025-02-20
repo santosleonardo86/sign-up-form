@@ -158,4 +158,5 @@ span input:invalid {
 
 .form-question b {
     color: #596D48;
+    cursor: pointer;
 }
