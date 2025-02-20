@@ -2,41 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
-    <title>Sign-up form</title>
+
+
+  <title>Sign-up form</title>
 </head>
 
 <body>
-    <div class="main-ctn">
+  <div class="main-ctn">
 
-        <section class="banner-section">
-            <div class="banner-ctn">
-                <img src="./img/bg-image.png" alt="Background" class="banner-img">
-            </div>
-        </section>
+    <section class="banner-section">
+      <div class="banner-ctn">
+        <div class="banner-title">
+          <img src="./img/odin-logo.png" alt="Background" class="odin-img" width="70px">
+          <span class="title">ODIN</span>
+        </div>
+      </div>
 
-        <section class="form-section">
-            <div class="form-top">
-                <p>This is not a real online service! You know you need something <br> like this in your life to help
-                    you
-                    realize
-                    your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+      <div class="banner-footer">
+        <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+      </div>
+    </section>
 
-                <p>You <em>know</em> you want to.</p>
-            </div>
+    <section class="form-section">
+      <div class="form-top">
+        <p>This is not a real online service! You know you need something <br> like this in your life to help
+          you
+          realize
+          your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
 
-            <div class="form-main">
+        <br>
+        <p>You <em>know</em> you want to.</p>
+      </div>
 
+      <div class="form-middle">
+        <div class="form-middle-title">
+          <p class="title">Let's do this!</p>
+        </div>
 
-            </div>
+        <form action="#" class="form-middle-form">
+          <div class="form-middle-form-row1">
+            <span>
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="fist-name">
+            </span>
 
-            <div class="form-bottom">
-            </div>
-        </section>
-    </div>
+            <span>
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name">
+            </span>
+          </div>
+
+          <div class="form-middle-form-row2">
+            <span>
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="fist-name">
+            </span>
+
+            <span>
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" name="phone-number" id="phone-number">
+            </span>
+          </div>
+
+          <div class="form-middle-form-row3">
+            <span>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password">
+            </span>
+
+            <span>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" name="confirm-password" id="confirm-password">
+            </span>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-bottom">
+        <div class="form-button">
+          <button type="submit">Create Account</button>
+        </div>
+
+        <p class="form-question">Already have an account? <b>Log in</b></p>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>

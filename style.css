@@ -1,13 +1,20 @@
+@font-face {
+    font-family: Norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: 'Roboto';
 }
 
 body {
     height: 100vh;
 }
+
 
 .main-ctn {
     display: flex;
@@ -19,11 +26,132 @@ body {
 }
 
 .banner-ctn {
-    max-width: 100%;
+    background-image: url("./img/bg-image.png");
+    background-size: cover;
+    background-position: center;
+    width: 390px;
     height: 100%;
 }
 
-.banner-img {
-    height: 100%;
-    width: 100%;
+.banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: 160px;
+    background: #00000083;
+    padding: 10px 0;
+}
+
+.banner-title .title {
+    font-family: Norse-bold, sans-serif;
+    font-size: 70px;
+    color: #fff;
+}
+
+.banner-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    color: #ffffffbb;
+    font-size: 10px;
+}
+
+.form-section {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    background: #cccccc65;
+    width: 630px;
+}
+
+.form-top {
+    padding: 90px 30px 60px;
+}
+
+.form-top p {
+    font-weight: bold;
+}
+
+.form-middle {
+    padding: 16px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    box-shadow: 1px 2px 8px #0000003c;
+}
+
+.form-middle-title .title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-middle-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-middle-form div {
+    display: flex;
+    gap: 60px;
+}
+
+.form-middle-form>div>span {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000c2;
+}
+
+span label {
+    margin-bottom: 2px;
+}
+
+span input {
+    padding: 3px;
+    font-size: 12px;
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid #E5E7EB;
+    outline: none;
+}
+
+span input:focus {
+    border: 1px solid #0000ffcf;
+    border-radius: 2px;
+    /* box-shadow: 10px 1px 1px 1px #000; */
+}
+
+span input:invalid {
+    border-color: #ff0000c4;
+}
+
+.form-bottom {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-bottom .form-button button {
+    border: 0;
+    border-radius: 6px;
+    background: #596D48;
+    color: #fff;
+    padding: 10px 40px;
+    font-weight: 500;
+}
+
+.form-bottom .form-question {
+    font-size: 12px;
+}
+
+.form-question b {
+    color: #596D48;
 }
