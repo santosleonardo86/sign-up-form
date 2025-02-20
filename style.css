@@ -15,9 +15,9 @@ body {
     height: 100vh;
 }
 
-
 .main-ctn {
     display: flex;
+    justify-content: center;
     height: 100%;
 }
 
@@ -37,11 +37,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 2px;
     position: relative;
     top: 160px;
     background: #00000083;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .banner-title .title {
@@ -64,41 +64,42 @@ body {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
-    background: #cccccc65;
+    background: #cccccc17;
     width: 630px;
 }
 
 .form-top {
-    padding: 90px 30px 60px;
+    padding: 90px 30px 48px;
 }
 
 .form-top p {
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 .form-middle {
-    padding: 16px 30px 30px;
+    padding: 12px 30px 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     background: #fff;
-    box-shadow: 1px 2px 8px #0000003c;
+    box-shadow: 0px 3px 5px #0000001d;
 }
 
 .form-middle-title .title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
 }
 
 .form-middle-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .form-middle-form div {
     display: flex;
-    gap: 60px;
+    gap: 50px;
 }
 
 .form-middle-form>div>span {
@@ -133,10 +134,10 @@ span input:invalid {
 }
 
 .form-bottom {
-    padding: 20px 30px;
-    display: flex;
+    padding: 24px 30px;
+    /* display: flex; */
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .form-bottom .form-button button {
@@ -146,10 +147,13 @@ span input:invalid {
     color: #fff;
     padding: 10px 40px;
     font-weight: 500;
+    box-shadow: 1px 1px 3px 1px #00000043;
+    margin-bottom: 28px;
+    cursor: pointer;
 }
 
 .form-bottom .form-question {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .form-question b {
